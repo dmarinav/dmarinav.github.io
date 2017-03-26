@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "Marina Drus"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Scientist         Data Analyst      Researcher"
+  bio              : "Data Scientist <br>Data Analyst <br>Researcher"
   location         : "New York, NY"
   email            :
   uri              :
