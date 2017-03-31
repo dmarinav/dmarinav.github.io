@@ -1,15 +1,23 @@
 ---
-title: "Data Scientists vs Data Analysts- Part 1"
+title: "Exploring The HOT 100: How Hot Can it Be?"
+excerpt: "It is coming"
+layout: single
+header:
+  overlay_image: billboard_logo.jpg
+  overlay_filter: 0.4
+  caption: ""
 categories:
   - data science
+  - general
 tags:
-  - data
-  - scientist
-  - science
-  - analyst
+  - road
+  - accident
+  - ARIMA
+  - time series
+  - forecast
   - R
-  - salary
-  - jobbR
+author: "Marina Drus"
+date: "17 December 2016"
 ---
 
 I decided to start off my blog series with a topic that can be often overlooked within the data science field. What exactly is a data scientist? Specifically, what skills do they possess compared to, say, data analysts? The typical skills of a data scientist has been addressed [here](http://kumaranpm.blogspot.co.uk/2014/11/popular-software-skills-in-data-science.html) (R) and [here](https://jessesw.com/Data-Science-Skills/) (Python). However, I'm interested in how this contrasts with similar analytical professions. Rather than relying on our opinions, let's address the topic in a more quantitative sense.
