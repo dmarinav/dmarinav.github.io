@@ -1,9 +1,9 @@
 ---
-title: "Exploring The HOT 100: How Hot Can it Be?"
+title: "Exploring the HOT 100: How Hot Can it Be?"
 excerpt: "It is coming"
 layout: single
 header:
-  overlay_image: road_overlay.jpg
+  overlay_image: billboard_logo.jpg
   overlay_filter: 0.4
   caption: ""
 categories:
