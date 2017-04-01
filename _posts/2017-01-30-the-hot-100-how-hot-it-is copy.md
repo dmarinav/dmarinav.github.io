@@ -1,10 +1,12 @@
 ---
-title: "Exploring the Hot 100: How Hot Can it Be?"
-excerpt: "This post explores explonatory data analysis of the top 100 songs for the year 2000"
+title: "Data Scientists vs Data Analysts- Part 2"
+excerpt: "This post explores the desired skills of data scientists/analysts and harnesses NLP to accurately predict data scientist positions from the job description"
 header:
   overlay_image: hot100_5.jpg
   overlay_filter: 0.4
   caption: ""
+  cta_label: "Part 1"
+  cta_url: "https://dashee87.github.io/data%20science/data-scientists-vs-data-analysts-part-1/"
 categories:
   - data science
 tags:
@@ -14,8 +16,8 @@ tags:
   - analyst
   - scrape
   - jobbR
-author: "Marina Drus"
-date: "1 October 2016"
+author: "David Sheehan"
+date: "13 November 2016"
 ---
 
 {% include base_path %}
