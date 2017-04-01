@@ -1,11 +1,14 @@
 ---
 layout: single
 title: "About"
-author: "David Sheehan"
-date: "4 November 2016"
+author: "Marina Drus"
+date: "1 April 2017"
 permalink: /about/
 author_profile: true
 
 ---
 
-I studied maths at [University College Cork (UCC)](https://en.wikipedia.org/wiki/University_College_Cork). It's true that its first Maths professor was [George Boole](https://en.wikipedia.org/wiki/George_Boole). After UCC, I earned a PhD in neuroscience from [University College London (UCL)](https://en.wikipedia.org/wiki/University_College_London). Ah... all of Coldplay went to UCL. Mathematical biology was the cool thing back in 2009. But like any good doctor these days, I left actual science for the (relatively) sexy world of data science. My current interests involve mining twitter for the next mathematical fad.
+After receiving my undergraduate degree in Finance and Investment, I spent several years working on Wall Street. Having passion for science, research, and data exploration I enrolled into a doctoral program where I received my PhD in Social Psychology with a minor in graduate-level Statistics. While in the graduate program, I gained substantial experience in predictive modeling, research methods, multiple statistical techniques, managing research projects, and scientific publishing. My academic work was honored by the National Science Foundation and won two competitions of the Personally and Social Psychology Society. I am currently a peer reviewer for the Personality Social Psychology Bulletin and a freelance data scientist. I found the sexy world of data science super sexy and matching my passion for science and data insight. And here I am loving every moment of it…
+
+
+[Click here] (http://nervousystemsbehavior.blogspot.com/)to see what others say about my research. 

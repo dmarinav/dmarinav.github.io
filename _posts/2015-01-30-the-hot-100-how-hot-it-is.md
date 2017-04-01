@@ -5,6 +5,7 @@ header:
   overlay_image: hot100_5.jpg
   overlay_filter: 0.4
   caption: ""
+  cta_label: " "
 categories:
   - data science
 tags:
