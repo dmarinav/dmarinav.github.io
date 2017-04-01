@@ -2,7 +2,7 @@
 title: "Data Scientists vs Data Analysts- Part 2"
 excerpt: "This post explores the desired skills of data scientists/analysts and harnesses NLP to accurately predict data scientist positions from the job description"
 header:
-  overlay_image: data-scientist-analyst-screen-1.jpg
+  overlay_image: hot100_5.jpg
   overlay_filter: 0.4
   caption: ""
   cta_label: "Part 1"
