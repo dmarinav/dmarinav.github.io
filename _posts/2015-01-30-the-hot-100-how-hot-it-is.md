@@ -20,13 +20,14 @@ date: "1 October 2016"
 
 {% include base_path %}
 
-Introduction
--------
+### Introduction
 
-The Billboard charts are the United States music industry standard popularity ranking issued weekly by Billboard magazine.  The Billboard charts rank songs relative to each other. The ranking is based on radio plays and sales (both physical and digital) data monitored by Nielsen Music, which electronically monitors radio stations in more than 140 markets across the United States. The goal of this project was to perform an explanatory data analysis using the billboard data of 2000. The billboard data is interesting in terms of its unique structure and introduces some minor challenges for data cleaning. To analyze the 2000 chart, the data structure was reshaped using pd.melt() function. Specifically, multiple columns indicating a number of weeks in chart and peak position were transformed into only 2 columns. For the details, please see [the python code](https://github.com/dmarinav/My_Projects/blob/master/Billboard100.ipynb).
--------
+The Billboard charts are the United States music industry standard popularity ranking issued weekly by Billboard magazine.  The Billboard charts rank songs relative to each other. The ranking is based on radio plays and sales (both physical and digital) data monitored by Nielsen Music, which electronically monitors radio stations in more than 140 markets across the United States. 
 
-Explanatory Data Analysis 
+The goal of this project was to perform an explanatory data analysis using the billboard data of 2000. The billboard data is interesting in terms of its unique structure and introduces some minor challenges for data cleaning. To analyze the 2000 chart, the data structure was reshaped using pd.melt() function. Specifically, multiple columns indicating a number of weeks in chart and peak position were transformed into only 2 columns. For the details, please see [the python code](https://github.com/dmarinav/My_Projects/blob/master/Billboard100.ipynb).
+
+
+### Explanatory Data Analysis 
 
 During the year of 2000, 317 songs entered and existed the billboard chart. As indicated by the wordcloud graph below, the most prominent words in the song titles were “love”, “wanna”, “baby”, “girl”, “God”, “friend”, “heart”, “need” and so on. Unsurprisingly (or maybe surprisingly) it was all about love, and love was definitely in the air. That is, most of the songs’ titles contained the magic word LOVE.
 
