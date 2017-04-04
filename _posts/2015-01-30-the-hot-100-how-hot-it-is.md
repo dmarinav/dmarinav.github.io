@@ -61,19 +61,22 @@ In general, as noted above, rock songs’ average peak positions had the highest
 ![Bubble Chart]({{ site.url }}{{ site.baseurl }}/images/pic1_5.png)
 
 
-The time series plot below indicates that rock and country followed by rap genre stayed in the billboard chart longer than other genres. They also take to peak later than other genres. Pop and Latin music reaches their peak positions sooner but also exists the chart sooner than rock, country, and rap. It is hard to make definite conclusion about reggae, R&B, jazz, and gospel as the number of songs reflecting these genres which entered the chart in 2000 is limited. 
+The time series plot below indicates that rock and country followed by rap genre stayed in the billboard chart longer than other genres. They also take to peak later than other genres. Pop and Latin music reaches their peak positions sooner but also exists the chart sooner than rock, country, and rap. It is hard to make definite conclusion about reggae, R&B, jazz, and gospel as the number of songs reflecting these genres which entered the chart in the year 2000 is limited. 
 
 
 ![Time Series]({{ site.url }}{{ site.baseurl }}/images/pic1_6.png)
 
 
-Finally, I looked at the number of days to reach peak position by month entered the chart. There has been an obvious trend that partially makes sense. Songs that entered the chart in December, March, and February reached their peak position sooner than songs that entered at other months. December is a holiday month so people are in the holiday mood to listen the music. There is a Grammy Award in February, so February has a plausible explanation as well. However, it is not that obvious what is so special about March. If you have an idea, send me an email. I would love to know. 
+Finally, I looked at the number of days to reach peak position by month entered the chart. There has been an obvious trend that partially made sense. Songs that entered the chart in December, March, and February reached their peak position sooner than songs that entered at other months. December is a holiday month so people are in the holiday mood to listen the music. There is a Grammy Award in February, so February has a plausible explanation as well. However, it is not that obvious what is so special about March. If you have an idea, send me an email. I would love to know. 
 
 
-![Month Entered the Chart]({{ site.url }}{{ site.baseurl }}/images/pic1_6.png)
+![Month Entered the Chart]({{ site.url }}{{ site.baseurl }}/images/pic1_7.png)
 
 
 ### Conclusion
+
+Overall, rock songs dominated the billboard chart in 2000. It was the most popular genre that had the highest average peak position and stayed in the chart longer than any other genre. The second most popular genre in the U.S. in 2000 was country music followed by rap music. The track length had not effect on popularity of songs or their longevity. Pop and Latin were more likely reach their peak position sooner but they were also more likely to leave the billboard chart sooner. They had a much shorter longevity compared to rock and country. Most songs would reach their peak positions within 200 days. However, Amazed by Lonestar, Kryptonite by 3 Doors Down, Sexual by Amber, and Higher by Creed peaked their top positions much later. Finally, love was the most popular theme in the 2000 billboard chart. Somethings tells me, though, it is the dominating theme at all times. But this would be a hypothesis for another explanatory data analysis.
+
 
 
 
