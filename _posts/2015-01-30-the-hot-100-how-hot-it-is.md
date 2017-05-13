@@ -4,8 +4,8 @@ excerpt: "This post explores explonatory data analysis of the top 100 songs for 
 header:
   overlay_image: hot100_5.jpg
   overlay_filter: 0.4
-  caption: ""
-  cta_label: " "
+  caption: "Next Post"
+  cta_label: "https://dmarinav.github.io/data%20science/titanic/"
 categories:
   - data science
 tags:
