@@ -29,48 +29,61 @@ The goal of this project was to perform an explanatory data analysis using the b
 
 ### Explanatory Data Analysis 
 
-During the year of 2000, 317 songs entered and existed the billboard chart. As indicated by the wordcloud graph below, the most frequent words in the titles of the songs were “love”, “wanna”, “baby”, “girl”, “God”, “friend”, “heart”, “need” and so on. Unsurprisingly (or maybe surprisingly) it was all about love, and love was definitely in the air. That is, most of the songs’ titles contained the magic word LOVE.
+During the year of 2000, 317 songs entered and existed the billboard chart. The most frequent words in the titles of the songs were “love”, “wanna”, “baby”, “girl”, “God”, “friend”, “heart”, “need” and etc. 
 
 
 ![Count of Songs by Genre]({{ site.url }}{{ site.baseurl }}/images/pic1_1.png) 
 
 
-I tried to find benchmark categories that can help me group and relate my data in order to extract the maximum amount of information. Finding the benchmark categories is extremely important for detecting a trend in data. For this reason, most of the data was grouped and explored by genre. Out of 317 songs, there were 137 rock songs, 74 country songs, 58 rap songs, 23 R&B songs, 9 pop songs, 9 Latin songs, 1 reggae song, 1 jazz song, and 1 gospel song. That makes sense as rock was the most popular genre in the U.S. in 2000. 
+Unsurprisingly (or maybe surprisingly) it was all about love, and love was definitely in the air. That is, most of the songs’ titles contained the magic word LOVE.
+
+I tried to find benchmark categories that can help me group and relate my data in order to extract the maximum amount of information. Finding the benchmark categories is extremely important for detecting a trend in data. For this reason, most of the data was grouped and explored by genre. 
 
 
 ![Wordcloud of Tracks' Names]({{ site.url }}{{ site.baseurl }}/images/pic1_2.png) 
 
 
-The average track length also varied by genre. While length of most tracks ranged from 200 seconds to 280 seconds long, jazz, gospel, electronica, and reggae had the highest average tack length. It is hard to say, however, whether it is a general trend since the chart contains only a few songs of these specific genres. 
+Out of 317 songs, there were 137 rock songs, 74 country songs, 58 rap songs, 23 R&B songs, 9 pop songs, 9 Latin songs, 1 reggae song, 1 jazz song, and 1 gospel song. That makes sense as rock was the most popular genre in the U.S. in 2000.
+
+The average track length also varied by genre. 
 
 
 ![Track Length]({{ site.url }}{{ site.baseurl }}/images/pic1_3.png)
 
 
-A boxplot displays information of a statistical data set in regards to its shape, variability, and median (middle of the data range). Below is the boxplot of peak position by genre. Note this plot is composed of an average peak position for each song—that is why, you won’t see the top whiskers reaching the very peak position. The middle peak position was the highest for rock and jazz followed by Latin and pop. However, only rock songs had the highest variability among its peak positions. They had the highest and the lowest average peak positions. In other words, rock songs in the year of 2000 either rocked or sucked (sorry, I could not help but rhyme here). 
+While length of most tracks ranged from 200 seconds to 280 seconds long, jazz, gospel, electronica, and reggae had the highest average tack length. It is hard to say, however, whether it is a general trend since the chart contains only a few songs of these specific genres. 
+
+A boxplot displays information of a statistical data set in regards to its shape, variability, and median (middle of the data range). Below is the boxplot of peak position by genre. 
 
 
 ![Boxplot of Peak Position]({{ site.url }}{{ site.baseurl }}/images/pic1_4.png)
 
 
-The next logical step was to show a relationship between a peak position and a number of days it takes each song to reach the peak position. The bubble chart below explores this relationship by genre and track length. In this chart, track length is proportional to the bubble area. It takes around 120-200 days for most songs to reach their peak positions. Rock songs have the highest average peak positions in the chart, followed by rap and Latin music. 
+Note this plot is composed of an average peak position for each song—that is why, you won’t see the top whiskers reaching the very peak position. The middle peak position was the highest for rock and jazz followed by Latin and pop. However, only rock songs had the highest variability among its peak positions. They had the highest and the lowest average peak positions. In other words, rock songs in the year of 2000 either rocked or sucked (sorry, I could not help but rhyme here). 
 
-In general, as noted above, rock songs’ average peak positions had the highest variability. Country, jazz, pop, electronica, gospel, R&B, and reggae songs rarely reached the highest peak positions or stayed at the highest peak positions for a long time. It is obvious from the chart that the track length did not affect neither the number of days it takes to reach a peak position nor the peak position itself. While most songs reached their peak positions within 120-200 days, there were several exceptions. Those songs were Amazed by Lonestar (273 days), Kryptonite by 3 Doors Down (217 days), Sexual by Amber (210 days), and Higher by Creed (316 days).
+The next logical step was to show a relationship between a peak position and a number of days it takes each song to reach the peak position. The bubble chart below explores this relationship by genre and track length. In this chart, track length is proportional to the bubble area. It takes around 120-200 days for most songs to reach their peak positions. Rock songs have the highest average peak positions in the chart, followed by rap and Latin music. 
 
 
 ![Bubble Chart]({{ site.url }}{{ site.baseurl }}/images/pic1_5.png)
 
 
-The time series plot below indicates that rock and country followed by rap genre stayed in the billboard chart longer than other genres. They also reached their peak positions later than the other genres. Pop and Latin music reached their peak positions sooner but also existed the chart sooner than rock, country, and rap. It is hard to make a definite conclusion about reggae, R&B, jazz, and gospel as the number of songs representing these genres in 2000 is limited. 
+In general, rock songs’ average peak positions had the highest variability. Country, jazz, pop, electronica, gospel, R&B, and reggae songs rarely reached the highest peak positions or stayed at the highest peak positions for a long time. It is obvious from the chart that the track length did not affect neither the number of days it takes to reach a peak position nor the peak position itself. While most songs reached their peak positions within 120-200 days, there were several exceptions. Those songs were Amazed by Lonestar (273 days), Kryptonite by 3 Doors Down (217 days), Sexual by Amber (210 days), and Higher by Creed (316 days).
+
+The time series plot below indicates that rock and country followed by rap genre stayed in the billboard chart longer than other genres. 
 
 
 ![Time Series]({{ site.url }}{{ site.baseurl }}/images/pic1_6.png)
 
 
-Finally, I looked at the number of days to reach the peak positions by month entered the chart. There has been an obvious trend that partially made sense. Songs that entered the chart in December, March, and February reached their peak positions sooner than songs that entered at the other months. December is a holiday month so, possibly, people are in the holiday mood to listen more music. February is famous for its Grammy Award, so February has a plausible explanation as well. However, it is not that obvious what is so special about March. If you have an idea, send me an email. I would love to know. 
+They also reached their peak positions later than the other genres. Pop and Latin music reached their peak positions sooner but also existed the chart sooner than rock, country, and rap. It is hard to make a definite conclusion about reggae, R&B, jazz, and gospel as the number of songs representing these genres in 2000 is limited. 
+
+Finally, I looked at the number of days to reach the peak positions by month entered the chart. There has been an obvious trend that somewhat made sense. 
 
 
 ![Month Entered the Chart]({{ site.url }}{{ site.baseurl }}/images/pic1_7.png)
+
+
+Songs that entered the chart in December, March, and February reached their peak positions sooner than songs that entered at the other months. December is a holiday month so, possibly, people are in the holiday mood to listen more music. February is famous for its Grammy Award, so February has a plausible explanation as well. However, it is not that obvious what is so special about March. If you have an idea, send me an email. I would love to know. 
 
 
 ### Conclusion
