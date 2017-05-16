@@ -81,23 +81,28 @@ I also included some variables that might not seem to affect match of the partic
  I excluded unique partner’s id (pid) from the models. It did predict finding a match because some variable some individuals are more socially popular and more attractive, and hence they get more attention at dating events. However, I refrained from using it in my model as it would be hard to apply to a different set of participants. Their unique id’s would affect the models differently. 
 
 
-[![Feature Selection Females]({{ site.url }}{{ site.baseurl }}/images/pic6_5.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_5.png)
-
-
-
-
 [![Feature Selection Males]({{ site.url }}{{ site.baseurl }}/images/pic6_6.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_6.png)
 
 
-As seen above, first and foremost, it is important for a participant-male to like his partner to find a match as her decision (dec) is the first feature to predicts a match. It is kind of obvious, I would say. Next, it is very important for his speed dating partner (female in this case) to find him attractive (att_o), like him overall (like_o), thinking he likes him too (prob_o), share the same interests with him (share_o), thinking he is a fun person (fun_o), sincere (sin_o), and ambitious (amb_o). Age of partner (age_o) is also important for males to find their match, and it is also important if his speed dating partner has met him before (met_o). 
+As seen above, first and foremost, it is important for a participant-male to like his partner to find a match as her decision (dec) is the first feature to predicts a match. It is kind of obvious, I would say. Next, it is very important for his speed dating partner (female in this case) to find him attractive (att_o), to like him overall (like_o), to think he likes her too (prob_o), to share the same interests with him (share_o), thinking he is a fun person (fun_o), sincere (sin_o), and ambitious (amb_o). Age of partner (age_o) is also important for males to find their match, and it is also important if his speed dating partner has met him before (met_o). 
 
-It is also essential what qualities in general your female partner finds important in males. Thus, fmales are more likely to meet their match if their female dating partner values intelligent (pf_o_int) first and attraction (pf_o_att) second,  and after that she values whether he shares her interests (pf_o_sha),  how fun he is (pf_o_fun), how sincere he is (pf_o_sin), and how ambitious he is (pf_o_amb), consequentially. So, dear Males, you are more likely to find a love at first sight at a Columbia University speed dating event if your female speed dating partner value intelligence first and beauty second. 
+It is also essential what qualities in general your female partner finds important in males. Thus, males are more likely to meet their match if their female dating partner values intelligent (pf_o_int) first and attraction (pf_o_att) second,  and after that she values whether he shares her interests (pf_o_sha),  how fun he is (pf_o_fun), how sincere he is (pf_o_sin), and how ambitious he is (pf_o_amb), consequentially. So, dear Males, you are more likely to find a love at first sight at a Columbia University speed dating event if your female speed dating partner value intelligence first and beauty second. 
 
 Now, what should males think in order to find a match. According to the graph above, in order to find a match, he has to think that his partner is more likely to value how fun he is (fun1_1) and whether he share common interests (sha1_1) with her, and whether he values fun in his potential partner (fun2_1).  Obviously, this kind of thinking works, possibly because the males who think this way so are more likely to appear fun and interesting to their potential mate and hence to get a potential mate
 
-Finally, how many people a participant-male met in wave (round) and whether he is a frequent dater (date) also plays a large role in finding a match. As I explained above, the more people there are in the wave the less likely one to meet his match. That is exactly what I found in the data (not sown here). Also, frequent male-daters are more likely to get themselves a match. I know it is not fair but frequent dater are more experienced and hence more appealing. 
+Finally, how many people a participant-male met in wave (round) and whether he is a frequent dater (date) also plays a large role in finding a match. As I explained above, the more people there are in the wave the less likely one to meet his match. That is exactly what I found in the data (not sown here). Also, frequent male-daters are more likely to get themselves a match. I know it is not fair but frequent dater are more experienced and hence more appealing.
+
+I excluded the station number (position), whether his appearance important (att1_1), and  importance of racial background (imprace)  from the final model as they did not really add to the accuracy score. 
 
 
+[![Feature Selection Females]({{ site.url }}{{ site.baseurl }}/images/pic6_5.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_5.png)
+
+
+It is slightly different for females, but not by much. Unsurprisingly, it is equally important for a female-participant to like her match (dec). In addition, in order for females to meet their match, it is very important for her speed dating partner to find her attractive (att_o), share common interests (share_o), like her overall (like_o), thinking she likes him too (prob_o), and only after that it is important for him whether she is fun (fun_o) and ambitious (amb_o). Interestingly, sincerity (sin_o) is not even on the picture here. Ladies, keep your sincerity to yourself if you would like to find a love at first sight!
+
+While age of partner (age_o) is equally important for females as for males to find their match, it is also important how young this female is (age). Based on research and life in general, this result is not surprising at all. 
+
+Just like in case with male feature selection model, here it is also essential what qualities in general speed dating male partner finds important in their potential dating partner. Thus, females are more likely to meet their match if their male dating partner values female beauty first (pf_o_att) – even more than he values your beauty (att_o). I guess the males who value female beauty know their way with women. Then female-participants are more likely to find a match if he values whether she shares his interests (pf_o_sha),  how fun she is (pf_o_fun), how sincere she is (pf_o_sin), how intelligent she is (pf_o_int), and only after that how ambitious she is (pf_o_amb). Interestingly, even though males value sincerity in their potential mate, they do not want to see it in short-term mating interactions. I assume sincerity works for males as a long-term mating strategy.
 
 
 
