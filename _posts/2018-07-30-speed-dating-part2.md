@@ -17,7 +17,7 @@ tags:
   - SMOT
   - feature selection
 author: "Marina Drus"
-date: "15 November 2017"
+date: "30 November 2017"
 ---
 
 {% include base_path %}
@@ -41,17 +41,17 @@ Below is an illustration of various synthetic minority oversampling techniques f
 
 Indeed, in the tables of scores below, you can see that Random Oversampling does produces highest accuracy scores across multiple classifiers.
 
-| Male Model Classifiers | ORIGINAL      | SMOT SVM      |ADASYN        |SMOT REG     |SMOT BORDER 1|RANDOM OVERS |
-|:----------------------:|:-------------:|:-------------:|:-------------:-------------:-------------:------------ :
-|Decision Tree           | 0.886 ± 0.029 | 0.886 ± 0.029 |0.886 ± 0.029 |0.886 ± 0.029|0.886 ± 0.029|0.886 ± 0.029|                |
-|Logistic Regr           |
-|Bagging DT
-|Random Forest
-|Extra Trees
-|Ada Boost
-|Gradient Boosting
-|Bernoulli NB
-|Support Vector                
+| Male Model Classifiers | ORIGINAL    | SMOT SVM      |ADASYN        |SMOT REG     |SMOT BORDER 1|RANDOM OVERS |
+|:----------------------:|:-----------:|:-------------:|:-------------:-------------:-------------:------------ :
+|Decision Tree           |0.832 ± 0.03 | 0.893 ± 0.022 |0.893 ± 0.018 |0.885 ± 0.024|0.881 ± 0.025|0.886 ± 0.029|                |
+|Logistic Regr           |0.893 ± 0.022|
+|Bagging DT              |0.893 ± 0.018|
+|Random Forest           |0.885 ± 0.024|
+|Extra Trees             |0.881 ± 0.025|
+|Ada Boost               |0.886 ± 0.029|
+|Gradient Boosting       |0.896 ± 0.02 |
+|Bernoulli NB            |0.882 ± 0.021|
+|Support Vector          |0.894 ± 0.018| 
 
 
 
