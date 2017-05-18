@@ -1,5 +1,5 @@
 ---
-title: "Predicting Love at First Sight"
+title: "Predicting Love at First Sight - Part 1"
 excerpt: "The post predicts finding a match for speed dating participants at Columbia University"
 
 header:
