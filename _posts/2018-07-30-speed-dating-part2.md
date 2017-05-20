@@ -44,6 +44,7 @@ My favorite technique is Random Oversampling. I will not go into detailed descri
 Indeed, in the tables of accuracy scores of the training set below, you can see that Random Oversampling does produces highest accuracy scores across Bagging DT, Random Forest, and Extra Trees classifiers. 
 
 #### MALE MODEL
+
 |Classifiers             | ORIGINAL    | SMOT SVM    |ADASYN       |SMOT REGULAR |SMOT BORDER 1|RANDOM OVERS |
 |:----------------------:|:-----------:|:-----------:|:------------:-------------:-------------:------------ :
 |Decision Tree           |0.832 ± 0.030|0.904 ± 0.013|0.901 ± 0.018|0.899 ± 0.016|0.897 ± 0.016|0.891 ± 0.019|
@@ -58,6 +59,7 @@ Indeed, in the tables of accuracy scores of the training set below, you can see 
 
 
 #### FEMALE MODEL
+
 |Classifiers             | ORIGINAL    | SMOT SVM    |ADASYN       |SMOT REGULAR |SMOT BORDER 1|RANDOM OVERS |
 |:----------------------:|:-----------:|:-----------:|:------------:-------------:-------------:------------ :
 |Decision Tree           |0.886 ± 0.029|0.935 ± 0.009|0.930 ± 0.014|0.927 ± 0.017|0.930 ± 0.009|0.922 ± 0.016|
@@ -83,10 +85,10 @@ I chose the Extra Tree classifier with random over-sampling because it gave me t
 As seen on confusion matrices, random over-sampling produced perfect confusion matrix and significantly improved minority class recognition. Moreover, it helped to yield perfect AUC scores for both models.
 
 
-[![SMOT Females]({{ site.url }}{{ site.baseurl }}/images/pic6_10.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_12.png)
+[![SMOT Females]({{ site.url }}{{ site.baseurl }}/images/pic6_12.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_12.png)
 
 
-[![SMOT Females]({{ site.url }}{{ site.baseurl }}/images/pic6_9.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_11.png)
+[![SMOT Females]({{ site.url }}{{ site.baseurl }}/images/pic6_11.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_11.png)
 
 
 ### Conclusion
