@@ -45,7 +45,7 @@ Indeed, in the tables of accuracy scores of the training set below, you can see 
 
 #### MALE MODEL
 
-|Classifiers             | ORIGINAL    | SMOT SVM    |ADASYN       |SMOT REGULAR |SMOT BORDER 1|RANDOM OVERS |
+|Classifiers             | ORIGINAL    | SMOT SVM    |ADASYN       |SMOT REG     |SMOT BOR1    |RANDOM OVER  |
 |:----------------------:|:-----------:|:-----------:|:------------:-------------:-------------:------------ :
 |Decision Tree           |0.832 ± 0.030|0.904 ± 0.013|0.901 ± 0.018|0.899 ± 0.016|0.897 ± 0.016|0.891 ± 0.019|
 |Logistic Regr           |0.893 ± 0.022|0.895 ± 0.011|0.875 ± 0.017|0.891 ± 0.018|0.891 ± 0.015|0.880 ± 0.012|
@@ -60,7 +60,7 @@ Indeed, in the tables of accuracy scores of the training set below, you can see 
 
 #### FEMALE MODEL
 
-|Classifiers             | ORIGINAL    | SMOT SVM    |ADASYN       |SMOT REGULAR |SMOT BORDER 1|RANDOM OVERS |
+|Classifiers             | ORIGINAL    | SMOT SVM    |ADASYN       |SMOT REG     |SMOT BOR1    |RANDOM OVER  |
 |:----------------------:|:-----------:|:-----------:|:------------:-------------:-------------:------------ :
 |Decision Tree           |0.886 ± 0.029|0.935 ± 0.009|0.930 ± 0.014|0.927 ± 0.017|0.930 ± 0.009|0.922 ± 0.016|
 |Logistic Regr           |0.917 ± 0.020|0.933 ± 0.011|0.922 ± 0.009|0.933 ± 0.014|0.934 ± 0.015|0.925 ± 0.011|
@@ -73,7 +73,7 @@ Indeed, in the tables of accuracy scores of the training set below, you can see 
 |Support Vector          |0.921 ± 0.022|0.933 ± 0.012|0.922 ± 0.009|0.929 ± 0.015|0.931 ± 0.014|0.922 ± 0.013|
 
 
-I chose the Extra Tree classifier with random over-sampling because it gave me the highest score on my training sets. After tuning the models, I received cross validation scores of 0.967 and 0.969 for the male and female models, respectively. The best accuracy scores for the male model were 100%, 97.34%, and 100% for training, test, and complete sets, respectively. The best accuracy scores for the female model were 100%, 96.98%, and 100% for training, test, and complete sets, respectively. The confusion matrices for both models introduced below.
+I chose the Extra Tree classifier with random over-sampling because it gave me the highest score on my training sets. After tuning the models, I received cross validation scores of 0.967 and 0.969 for the male and female models, respectively. The best accuracy scores for the male model were 100%, 97.34%, and 100% for training, test, and complete sets, respectively. The confusion matrices for both models introduced below.
 
 #### MALE MODEL
 [![SMOT Females]({{ site.url }}{{ site.baseurl }}/images/pic6_10.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_10.png)
@@ -93,8 +93,11 @@ As seen on confusion matrices, random over-sampling produced perfect confusion m
 
 ### Conclusion
 
+In this project, I implemented feature selection techniques, synthetic minority oversampling techniques, modeling techniques, and model tuning to achieve very high accuracy scores and confusion matrices with 100% of precision, recall, and f-1 score. This project demonstrated that all the above-mentioned techniques can boost prediction accuracy scores by almost 10 points, indicating that model accuracy should be attributed to mastery of data analysis and data science and not to data quality.
 
+Furthermore, I build two models, for each gender, that predict finding love at first sight. The findings indicate that there are gender differences in everyday activities as well as in mating and relating.  Males were more interested in sports, TV sports, and gaming while females preferred yoga, watching TV, theater, shopping, dining concerts, and art. Males preferred attractive females while females preferred ambitious men. Feature selection process showed that love at first sight can be pretty superficial and not necessarily guarantee a long-lasting relationship. For example, ambitions negatively predicted finding a match for both genders while sincerity negatively predicated finding a match for males and was trivial predictor in matching with a speed dating partners for females. That is, both males and females do not consider sincerity an important factor in finding love at first sight even though in an imaginary world both genders want sincerity in relationship (as they reported them as important qualities in a potential mate). Older females had a much harder time finding a match – for them age negatively predicted love at first sight, and those females who major in Film and Social Work were more likely to find a match compared with those who major in Biology/Chemistry/Physics. Is anyone now surprised that there is a shortage of females in STEM?
 
+These are just some highlights and, of course, love at first sight is not completely superficial. Both genders would choose a partner who they perceived sharing interests with them, and those who valued intelligence in their partners were more likely to find a match. However, these findings cannot be applicable to general population.  Columbia students and students in general do not behave like general population. To make these findings applicable to general population, data should be collected from multiple speed dating events, from various states, from all age groups, and from people with various economic background. 
 
 
 {% capture notice-2 %}
@@ -103,8 +106,6 @@ As seen on confusion matrices, random over-sampling produced perfect confusion m
 * Batista, G. E., Prati, R. C., & Monard, M. C. (2004). A study of the behavior of several methods for balancing machine learning training data. ACM Sigkdd Explorations Newsletter, 6(1), 20-29.
 
 * Chawla, Nitesh V., et al. "SMOTE: synthetic minority over-sampling technique." Journal of artificial intelligence research 16 (2002): 321-357.Chawla, N. V., Bowyer, K. W., Hall, L. O., & Kegelmeyer, W. P. (2002). SMOTE: synthetic minority over-sampling technique. Journal of artificial intelligence research, 16, 321-357.
-
-* Fisman, R., Iyengar, S. S., Kamenica, E., & Simonson, I. (2006). Gender differences in mate selection: Evidence from a speed dating experiment. The Quarterly Journal of Economics, 121(2), 673-697.
 
 * Japkowicz, N. (2000). The Class Imbalance Problem: Significance and Strategies. In Proceedings of the 2000 International Conference on Artificial Intelligence (IC-AI’2000): Special Track on Inductive Learning Las Vegas, Nevada.
 
