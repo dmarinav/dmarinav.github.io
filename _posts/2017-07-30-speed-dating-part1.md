@@ -107,8 +107,7 @@ Replicating findings with males, a number of people in a wave (round) also posit
 
 I excluded other features from the male and female models as they did not really add any additional value to the accuracy scores of classifiers.
 
-To be continued in [Part 2]( https://dmarinav.github.io/data%20science/speed-d
-
+To be continued in [Part 2]( https://dmarinav.github.io/data%20science/speed-d)
 
 {% capture notice-2 %}
 #### REFERENCES
@@ -118,6 +117,8 @@ To be continued in [Part 2]( https://dmarinav.github.io/data%20science/speed-d
 <div class="notice">
   {{ notice-2 | markdownify }}
 </div>
+
+
 
 
 
