@@ -109,14 +109,7 @@ I excluded other features from the male and female models as they did not really
 
 To be continued in [Part 2]( https://dmarinav.github.io/data%20science/speed-d)
 
-{% capture notice-2 %}
-#### REFERENCES
 
-* Fisman, R., Iyengar, S. S., Kamenica, E., & Simonson, I. (2006). Gender differences in mate selection: Evidence from a speed dating experiment. The Quarterly Journal of Economics, 121(2), 673-697.
-
-<div class="notice">
-  {{ notice-2 | markdownify }}
-</div>
 
 
 
