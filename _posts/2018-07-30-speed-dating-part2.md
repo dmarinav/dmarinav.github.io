@@ -1,6 +1,6 @@
 ---
 title: "Predicting Love at First Sight - Part 2"
-excerpt: "The post predicts finding a match for speed dating participants at Columbia University"
+excerpt: "The post goes over SMOT and model selection to predict a match for speed dating participants at Columbia University"
 
 header:
   overlay_image: speed2.jpg
