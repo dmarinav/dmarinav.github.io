@@ -82,7 +82,7 @@ I excluded unique partner’s id (pid) from the models, even though it predicted
 
 [![Feature Selection Males]({{ site.url }}{{ site.baseurl }}/images/pic6_6.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_6.png)
 
-I will go over only selected features as I don’t want to make this post very long. If you are curious about the ones I will not mention you can take a look at logistic regression outputs for the [male model]( https://github.com/dmarinav/My_Projects/blob/master/SPEED%20DATING/FEATURE%20EXTRACTION_MALE%20MODEL_PART3b.ipynb) and the [female model]( https://github.com/dmarinav/My_Projects/blob/master/SPEED%20DATING/FEMALE%20MODEL_LOGISTIC_REG_OUTPUT.ipynb).
+I will go over only selected features as I don’t want to make this post very long. If you are curious about the ones I will not mention you can take a look at logistic regression outputs for the [male model](https://github.com/dmarinav/My_Projects/blob/master/SPEED%20DATING/MALE%20MODEL_LOGISTIC_REG_OUTPUT.ipynb) and the [female model]( https://github.com/dmarinav/My_Projects/blob/master/SPEED%20DATING/FEMALE%20MODEL_LOGISTIC_REG_OUTPUT.ipynb).
 
 As seen above, it is very important for male participant if his speed dating partner (female) finds him attractive (att_o), likes him overall (like_o), thinks he likes her too (prob_o), shares the same interests with him (share_o), and thinks he is a fun person (fun_o). Interestingly, finding your male dating partner sincere (sin_o) and ambitious (amb_o) negatively predicted finding a match for males. It seemed like sincerity and ambition did not help males to find love at first sight. 
 
