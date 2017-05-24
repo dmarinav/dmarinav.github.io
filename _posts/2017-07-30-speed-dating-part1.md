@@ -3,7 +3,7 @@ title: "Predicting Love at First Sight - Part 1"
 excerpt: "The post goes over EDA and feature selection to predict a match for speed dating participants at Columbia University"
 
 header:
-  overlay_image: speed2.jpg
+  overlay_image: speed2.png
   overlay_filter: 0.4
   caption: " "
   cta_label: "Part 2"
