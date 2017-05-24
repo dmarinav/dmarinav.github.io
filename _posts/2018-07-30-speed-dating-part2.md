@@ -26,7 +26,7 @@ date: "30 November 2017"
 ### SMOT and Model Selection 
 
 
-In Part 1, I went over EDA and a feature selection process. Please visit [Part 1](https://dmarinav.github.io/data%20science/speed-dating/) for the review. This part covers synthetic minority oversampling techniques (SMOT) and model selection. Synthetic minority oversampling techniques is a very useful strategy to combat imbalance classes. More people usually find no match at speed dating events than do, and, of course, I made sure my data had no imbalanced classes. From my experience, SMOT is also extremely valuable in increasing model’s accuracy. Almost all the times, I used SMOTs I would drastically increase my accuracy scores. 
+In Part 1, I went over EDA and a feature selection process. Please visit [Part 1](https://dmarinav.github.io/data%20science/speed-dating-part1/) for the review. This part covers synthetic minority oversampling techniques (SMOT) and model selection. Synthetic minority oversampling techniques is a very useful strategy to combat imbalance classes. More people usually find no match at speed dating events than do, and, of course, I made sure my data had no imbalanced classes. From my experience, SMOT is also extremely valuable in increasing model’s accuracy. Almost all the times, I used SMOTs I would drastically increase my accuracy scores. 
 
 In this project, I implemented several SMOT techniques and choose the one that would give me the best accuracy across the nine classifiers: 1) Decision Tree, 2) Logistic Regression, 3) Bagging DT, 4) Random Forest, 5) Extra Trees, 6) Ada Boost, 7) Gradient Boosting, 8) Bernoulli NB, and 9) Support Vector Machine. 
 
