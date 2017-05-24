@@ -102,7 +102,7 @@ Replicating findings with males, a number of people in a wave (round) also posit
 
 I included 21 features in the female model and 19 features in the male model. Those features would give me the best possible accuracy scores across the classifiers.
 
-To be continued in [Part 2]( https://dmarinav.github.io/data%20science/speed-d)
+To be continued in [Part 2](https://dmarinav.github.io/data%20science/speed-dating-part2/)
 
 {% capture notice-2 %}
 #### REFERENCES
