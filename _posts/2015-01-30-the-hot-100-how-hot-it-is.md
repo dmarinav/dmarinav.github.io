@@ -25,7 +25,7 @@ date: "1 October 2016"
 
 The Billboard charts are the United States music industry standard popularity ranking issued weekly by Billboard magazine.  The Billboard charts rank songs relative to each other. The ranking is based on radio plays and sales (both physical and digital) data monitored by Nielsen Music, which electronically monitors radio stations in more than 140 markets across the United States. 
 
-The goal of this project was to perform an explanatory data analysis using the billboard data of 2000. The billboard data are interesting in terms of its unique structure and introduces some minor challenges for data cleaning. To analyze the 2000 chart, the data structure was reshaped using pd.melt() function. Specifically, multiple columns indicating a number of weeks in chart and peak position were transformed into only 2 columns. For the details, please see the [python code](https://github.com/dmarinav/My_Projects/blob/master/Billboard100.ipynb).
+The goal of this project was to perform an explanatory data analysis using the billboard data of 2000. The billboard data are interesting in terms of its unique structure and introduces some minor challenges for data cleaning. To analyze the 2000 chart, the data structure was reshaped using pd.melt() function. Specifically, multiple columns indicating a number of weeks in chart and peak position were transformed into only 2 columns. For the details, please see the [python code](https://github.com/dmarinav/My_Projects/blob/master/BILLBOARD100.ipynb).
 
 
 ### Explanatory Data Analysis 
