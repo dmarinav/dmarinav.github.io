@@ -45,8 +45,8 @@ In the tables of accuracy scores below (calculated for training set), you can se
 
 #### MALE MODEL
 
-|Classifiers             | ORIGINAL    | SMOT SVM    |ADASYN       |SMOT REG     |SMOT BOR1    |RANDOM OVER  |
-|:----------------------:|:-----------:|:-----------:|:------------:-------------:-------------:------------ :
+|Classifiers             | ORIGINAL    | SMOT SVM    |ADASYN       |SMOT REGULAR |SMOT BORDER1 |RANDOM OVER  |
+|:----------------------:|:-----------:|:-----------:|:-----------:|------------:|:-----------:|:-----------:|
 |Decision Tree           |0.832 ± 0.030|0.904 ± 0.013|0.901 ± 0.018|0.899 ± 0.016|0.897 ± 0.016|0.891 ± 0.019|
 |Logistic Regr           |0.893 ± 0.022|0.895 ± 0.011|0.875 ± 0.017|0.891 ± 0.018|0.891 ± 0.015|0.880 ± 0.012|
 |Bagging DT              |0.893 ± 0.018|0.928 ± 0.013|0.931 ± 0.020|0.931 ± 0.016|0.936 ± 0.017|0.948 ± 0.016|
@@ -60,8 +60,8 @@ In the tables of accuracy scores below (calculated for training set), you can se
 
 #### FEMALE MODEL
 
-|Classifiers             | ORIGINAL    | SMOT SVM    |ADASYN       |SMOT REG     |SMOT BOR1    |RANDOM OVER  |
-|:----------------------:|:-----------:|:-----------:|:------------:-------------:-------------:------------ :
+|Classifiers             | ORIGINAL    | SMOT SVM    |ADASYN       |SMOT REGULAR |SMOT BORDER1 |RANDOM OVER  |
+|:----------------------:|:-----------:|:-----------:|:-----------:|------------:|:-----------:|:-----------:|
 |Decision Tree           |0.886 ± 0.029|0.935 ± 0.009|0.930 ± 0.014|0.927 ± 0.017|0.930 ± 0.009|0.922 ± 0.016|
 |Logistic Regr           |0.917 ± 0.020|0.933 ± 0.011|0.922 ± 0.009|0.933 ± 0.014|0.934 ± 0.015|0.925 ± 0.011|
 |Bagging DT              |0.921 ± 0.018|0.946 ± 0.010|0.949 ± 0.013|0.946 ± 0.015|0.952 ± 0.010|0.959 ± 0.009|
