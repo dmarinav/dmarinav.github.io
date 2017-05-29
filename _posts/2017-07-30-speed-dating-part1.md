@@ -29,14 +29,14 @@ For this project, I selected data from the [Kaggle Speed Dating Experiment]( htt
 
 In addition, demographics, dating habits, self-perception across key attributes, beliefs on what others find valuable in a mate, and lifestyle information were collected at different points in time.  See the [Speed Dating Data Key document]( https://github.com/dmarinav/My_Projects/blob/master/SPEED%20DATING/Speed%20Dating%20Data%20Key.doc) for details (click on View Raw to see the key).
 
-The features were assessed at Time 1 (before and right after participating in the event), Time 2 (the day after participating in the event), and Time 3 (3-4 weeks after participating in the event). I only used the data from Time 1 since only this data was relevant to my model and wanted to predict the probability of leaving the events with a match for both males and females. The project had 4 parts: 1) data cleaning, 2) EDA, 3) feature selection, and 4) model selection.
+The features were assessed at Time 1 (before and right after participating in the event), Time 2 (the day after participating in the event), and Time 3 (3-4 weeks after participating in the event). I only used the data from Time 1 because that was the only data that was relevant to my model since I wanted to predict the probability of leaving the events with a match for both males and females. The project had 4 parts: 1) data cleaning, 2) Exploratory Data Analysis (EDA), 3) feature selection, and 4) model selection.
 
 My goal was to find out what attitudes towards mating influences love at first sight as well as the probability of finding love at first sight at Columbia speed dating events. Because of gender differences in partner selection (Fisman, Raymond, et al., 2006), my decision was to build two models: a model for males and a model for females with dependent variable match. Thus, the first model predicted the probability of finding a match for males while the second model predicted the probability of finding a match for females.
 
 
-### Explanatory Data Analysis
+### Exploratory  Data Analysis
 
-The goal of the explanatory data analysis (EDA) was to investigate demographic data and to highlight gender differences in mate selection.
+The goal of the exploratory data analysis (EDA) was to investigate demographic data and to highlight gender differences in mate selection.
 
 
 [![Histogram]({{ site.url }}{{ site.baseurl }}/images/pic6_1.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_1.png)
@@ -50,7 +50,7 @@ As we can see from the histogram, most females and males were in the age group o
 
 Most participants were European Americans, followed by Asian Americans, Hispanic Americans, others, and African Americans. There were approximately the same number of males and females in each race group.
 
-Furthermore, as seen below, there were some gender differences in fun activities.  Males were more interested in sports, TV sports, and gaming while females preferred yoga, watching TV, theater, shopping, dining concerts, and art. Both genders liked reading, music, movies, hiking, exercise, and clubbing. 
+Furthermore, as seen below, there were some gender differences in recreational activities.  Males were more interested in sports, TV sports, and gaming while females preferred yoga, watching TV, theater, shopping, dining concerts, and art. Both genders liked reading, music, movies, hiking, exercise, and clubbing. 
  
 
 [![Diff in Fun Activities]({{ site.url }}{{ site.baseurl }}/images/pic6_3.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_3.png)
@@ -62,7 +62,7 @@ In spite of the gender differences, both genders equally valued funny, intellige
 [![Diff in Fun Activities]({{ site.url }}{{ site.baseurl }}/images/pic6_4.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_4.png)
 
 
-The EDA points out at gender differences in fun activities and mate selection, confirming my suspicion that it is crucial to build two different models predicting speed dating match for each gender. Different features predicting match for males vs. females can affect the predictive accuracy of models.
+The EDA points out gender differences in fun activities and mate selection, confirming my suspicion that it is crucial to build two different models predicting speed dating match for each gender. Different features predicting match for males vs. females can affect the predictive accuracy of models.
 
 
 ### Feature Selection
@@ -84,7 +84,7 @@ I excluded unique partner’s id (pid) from the models, even though it predicted
 
 I will go over only selected features as I don’t want to make this post very long. If you are curious about the ones I didn't mention you can take a look at logistic regression outputs for the [male model](https://github.com/dmarinav/My_Projects/blob/master/SPEED%20DATING/MALE%20MODEL_LOGISTIC_REG_OUTPUT.ipynb) and the [female model]( https://github.com/dmarinav/My_Projects/blob/master/SPEED%20DATING/FEMALE%20MODEL_LOGISTIC_REG_OUTPUT.ipynb).
 
-As seen above, it is very important for male participant if his speed dating partner (female) finds him attractive (att_o), likes him overall (like_o), thinks he likes her too (prob_o), shares the same interests with him (share_o), and thinks he is a fun person (fun_o). Interestingly, finding your male dating partner sincere (sin_o) and ambitious (amb_o) negatively predicted finding a match for males. It seemed like sincerity and ambition did not help males to find love at first sight. 
+As seen above, it is very important for a male participant if his speed dating partner (female) finds him attractive (att_o), likes him overall (like_o), thinks he likes her too (prob_o), shares the same interests with him (share_o), and thinks he is a fun person (fun_o). Interestingly, finding your male dating partner sincere (sin_o) and ambitious (amb_o) negatively predicted finding a match for males. It seemed like sincerity and ambition did not help males to find love at first sight. 
 
 Age of partner (age_o) is also important for males to find their match, as is whether his speed dating partner has met him before (met_o), indicating that males tend to warm up faster to females they know.
 

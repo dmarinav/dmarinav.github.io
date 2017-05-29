@@ -25,10 +25,10 @@ date: "1 October 2016"
 
 The Billboard charts are the United States music industry standard popularity ranking issued weekly by Billboard magazine.  The Billboard charts rank songs relative to each other. The ranking is based on radio plays and sales (both physical and digital) data monitored by Nielsen Music, which electronically monitors radio stations in more than 140 markets across the United States. 
 
-The goal of this project was to perform an explanatory data analysis using the billboard data of 2000. The billboard data are interesting in terms of its unique structure and introduces some minor challenges for data cleaning. To analyze the 2000 chart, the data structure was reshaped using pd.melt() function. Specifically, multiple columns indicating a number of weeks in chart and peak position were transformed into only 2 columns. For the details, please see the [python code](https://github.com/dmarinav/My_Projects/blob/master/BILLBOARD100.ipynb).
+The goal of this project was to perform an exploratory data analysis using the billboard data of 2000. The billboard data are interesting in terms of its unique structure and introduces some minor challenges for data cleaning. To analyze the 2000 chart, the data structure was reshaped using pd.melt() function. Specifically, multiple columns indicating a number of weeks in chart and peak position were transformed into only 2 columns. For the details, please see the [python code](https://github.com/dmarinav/My_Projects/blob/master/BILLBOARD100.ipynb).
 
 
-### Explanatory Data Analysis 
+### Exploratory Data Analysis 
 
 During the year of 2000, 317 songs entered and existed the billboard chart. The most frequent words in the titles of the songs were “love”, “wanna”, “baby”, “girl”, “God”, “friend”, “heart”, “need” and etc. 
 
@@ -89,7 +89,7 @@ Songs that entered the chart in December, March, and February reached their peak
 
 ### Conclusion
 
-Overall, rock songs dominated the billboard chart in 2000. It was the most popular genre that had the highest average peak position and stayed in the chart longer than any other genre. The second most popular genre in the U.S. in 2000 was country music followed by rap music. The track length had no effect on the popularity of songs nor their longevity. Pop and Latin were more likely to reach their peak positions sooner but they were also more likely to leave the billboard chart sooner. They had a much shorter longevity compared to rock and country. Most songs would reach their peak positions within 200 days. However, Amazed by Lonestar, Kryptonite by 3 Doors Down, Sexual by Amber, and Higher by Creed reached their top positions much later. Finally, love was the most popular theme in the 2000 billboard chart. Somethings tells me, though, it is the dominating theme of all times. But this would be a hypothesis for another explanatory data analysis.
+Overall, rock songs dominated the billboard chart in 2000. It was the most popular genre that had the highest average peak position and stayed in the chart longer than any other genre. The second most popular genre in the U.S. in 2000 was country music followed by rap music. The track length had no effect on the popularity of songs nor their longevity. Pop and Latin were more likely to reach their peak positions sooner but they were also more likely to leave the billboard chart sooner. They had a much shorter longevity compared to rock and country. Most songs would reach their peak positions within 200 days. However, Amazed by Lonestar, Kryptonite by 3 Doors Down, Sexual by Amber, and Higher by Creed reached their top positions much later. Finally, love was the most popular theme in the 2000 billboard chart. Somethings tells me, though, it is the dominating theme of all times. But this would be a hypothesis for another exploratory data analysis.
 
 
 
