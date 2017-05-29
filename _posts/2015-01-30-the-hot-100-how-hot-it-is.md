@@ -1,6 +1,6 @@
 ---
 title: "Exploring the Hot 100: How Hot Can it Be?"
-excerpt: "The post explores explonatory data analysis of the top 100 songs for the year 2000"
+excerpt: "The post covers exploratory data analysis of the top 100 songs for the year 2000"
 header:
   overlay_image: hot100_5.jpg
   overlay_filter: 0.4
