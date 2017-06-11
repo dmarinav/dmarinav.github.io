@@ -13,7 +13,7 @@ categories:
 tags:
   - classification algorithms
   - binary classification 
-  - Kaggle competition
+  - Kaggle dataset
   - SMOT
   - feature selection
 author: "Marina Drus"
