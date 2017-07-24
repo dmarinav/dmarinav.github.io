@@ -26,7 +26,9 @@ date: "30 November 2017"
 ### SMOT and Model Selection 
 
 
-In Part 1, I went over EDA and a feature selection process. Please visit [Part 1](https://dmarinav.github.io/data%20science/speed-dating-part1/) for the review. This part covers synthetic minority oversampling techniques (SMOT) and model selection. Synthetic minority oversampling techniques is a very useful strategy to combat imbalance classes. Most people usually don't find matches at speed dating events, and, of course, I made sure my data had no imbalanced classes. From my experience, SMOT is also extremely valuable in increasing the model’s accuracy. Almost every time I used SMOTs, I would drastically increase my accuracy scores.
+In Part 1, I went over EDA and a feature selection process. Please visit [Part 1](https://dmarinav.github.io/data%20science/speed-dating-part1/) for the review. This part covers synthetic minority oversampling techniques (SMOT) and model selection. Synthetic minority oversampling techniques is a very useful strategy to combat imbalanced classes. Most people usually don't find matches at speed dating events, thus the data comes with imbalanced classes. From my experience, SMOT is also extremely valuable in increasing model’s accuracy. Almost every time I would use SMOTs, I drastically increased my accuracy scores. 
+
+However, going through the interview process for data science positions, I realized that many industry experts use a simple logistic regression to combat imbalanced classes. Here, I want to demonstrate that combating imbalanced classes with more sophisticated techniques can substantially outperform logistic regression. Applying these techniques can save company several thousands or even millions in revenue. In industry, instead of predicting a speed dating match we need to match an advertiser with a publisher or do risk assessment and evaluation for loans. Thus, improving accuracy of an algorithm can substantially increase profitability of a company. 
 
 In this project, I implemented several SMOT techniques and chose the one that would give me the best accuracy across the nine classifiers: 1) Decision Tree, 2) Logistic Regression, 3) Bagging DT, 4) Random Forest, 5) Extra Trees, 6) Ada Boost, 7) Gradient Boosting, 8) Bernoulli NB, and 9) Support Vector Machine.
 
@@ -39,9 +41,9 @@ Below is an illustration of various synthetic minority oversampling techniques f
 [![SMOT Females]({{ site.url }}{{ site.baseurl }}/images/pic6_7.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_7.png)
 
 
-Myy favorite technique is Random Oversampling. I will not go into a detailed description of each technique, but, generally,  SMOTs oversample by creating “synthetic” examples rather than by over-sampling with replacement. On the other hand, Random Oversampling works by randomly over-sampling with replacement. Previous research (Chawla, et al., 2002; Ling & Li, 1998; Japkowicz, 2000) noted Random Oversampling doesn’t significantly improve minority class recognition. That is, however, not my experience with this technique. As you see below, not only does Random Oversampling significantly improve minority class recognition, it does a much better job with some classifiers (e.g., Bagging DT, Random Forest, and Extra Trees) than the other SMOT techniques.
+I will not go into a detailed description of each technique, but, generally,  SMOTs oversample by creating “synthetic” examples rather than by over-sampling with replacement. On the other hand, Random Oversampling works by randomly over-sampling with replacement. Previous research (Chawla, et al., 2002; Ling & Li, 1998; Japkowicz, 2000) noted Random Oversampling doesn’t significantly improve minority class recognition.  As you see below, Random Oversampling improved minority class recognition on the balanced training set, but when I tested it on the imbalanced data set, it delivered only slightly better scores compared to logistic regression. The best test accuracy scores for the imbalanced data set were obtained using the regular synthetic minority over-sampling technique (SMOT Regular). Basically, my strategy was to tune and train my model using the SMOT-balanced training set, and then test its performance in comparison with the same algorithm trained on the imbalanced set and a logistic regression trained on the imbalanced with adjusted class weights.
 
-In the tables of accuracy scores below (calculated for training set), you can see that Random Oversampling indeed produces the highest accuracy scores across Bagging DT, Random Forest, and Extra Trees classifiers.
+In the tables of accuracy scores below, you can see that the SMOTs techniques drastically boost accuracy scores of the balanced training set. 
 
 #### MALE MODEL
 
@@ -73,7 +75,25 @@ In the tables of accuracy scores below (calculated for training set), you can se
 |Support Vector          |0.921 ± 0.022|0.933 ± 0.012|0.922 ± 0.009|0.929 ± 0.015|0.931 ± 0.014|0.922 ± 0.013|
 
 
-I chose Extra Tree classifier with random over-sampling because it gave me the highest scores on my training sets. After tuning the models, I received cross validation scores of 96.70% and 96.91% for the male and female models, respectively. The best accuracy scores for the male model were 100%, 97.34%, and 100% for training, test, and complete sets, respectively. Likewise, the best accuracy scores for the female model were 100%, 96.98%, and 100% for training, test, and complete sets, respectively. The confusion matrices for both models are introduced below.
+I chose Extra Tree classifier trained on the balanced data set using the regular synthetic minority oversampling technique. I tested it on the imbalanced test data set and compared its accuracy to the accuracy of the Extra Tree classifier that was trained and tested on the imbalanced data set and the logistic regression with adjusted class weights that was trained and tested on the imbalanced data set. The table below represents train and test accuracy scores for the tuned and tuned algorithms.
+
+
+|Classifiers                        | ACCURACY of MALE MODEL   | ACCURACY OF FEMALE MODEL   | 
+|:---------------------------------:|:------------------------:|:--------------------------:|
+|TRANING SET:                       |                          |                            |
+|                                   |                          |                            |
+|Logistic Regression                |89.38%                    |92.00%                      |
+|Extra Tree Classifier              |90.01%                    |92.66%                      |
+|Extra Tree Classifier SMOT         |95.19%                    |96.42%                      |
+|                                   |                          |                            |
+|TEST SET:                          |                          |                            |
+|                                   |                          |                            |
+|Logistic Regression                |89.70%                    |92.47%                      |
+|Extra Tree Classifier              |90.49%                    |92.11%                      |
+|Extra Tree Classifier SMOT         |97.93%                    |98.00%                      |
+
+
+As seen in the table above, the SMOT Extra Tree classifier outperformed the Extra Tree Classifier and logistic regression. In addition, as seen below from the confusion matrices, the SMOT Extra Tree classifier substantially improved precision and recall accuracy for the imbalanced class. 
 
 #### MALE MODEL
 [![SMOT Females]({{ site.url }}{{ site.baseurl }}/images/pic6_10.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_10.png)
@@ -82,20 +102,18 @@ I chose Extra Tree classifier with random over-sampling because it gave me the h
 [![SMOT Females]({{ site.url }}{{ site.baseurl }}/images/pic6_9.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_9.png)
 
 
-As seen from the graphs of confusion matrices, random over-sampling produced perfect confusion matrices and significantly improved minority class recognition for both models. Moreover, it helped to yield perfect AUC scores for both models.
-
+Moreover, as seen below, the SMOT Extra Tree classifier helped to yield perfect AUC scores for both models.
 
 [![SMOT Females]({{ site.url }}{{ site.baseurl }}/images/pic6_12.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_12.png)
-
 
 [![SMOT Females]({{ site.url }}{{ site.baseurl }}/images/pic6_11.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_11.png)
 
 
 ### Conclusion
 
-In this project, I've implemented feature selection techniques, synthetic minority oversampling techniques, and modeling techniques to achieve very high accuracy scores as well as confusion matrices with 100% of precision, recall, and f-1 scores. This project demonstrated that all the above-mentioned techniques can boost prediction accuracy scores by almost 10 points.
+In this project, I've implemented feature selection techniques and modeling techniques to build two machine learning models. I also applied a synthetic minority oversampling technique to improve accuracy scores of the models as well as precision and recall accuracy for the imbalanced class. This project demonstrated that the synthetic minority oversampling technique significantly outperformed logistic regression and boosted prediction accuracy scores by at least 7 % while boosting precision and recall accuracy of the imbalanced class by 20 % and 46 %, correspondingly. This is a very drastic improvement. In industry, most of the time,  the imbalanced class is the class that we need to predict accurately, and using simple logistic regression with class weights might not be an ideal solution.
 
-Furthermore, I built two models, for each gender, that predicted finding love at first sight. The findings indicate that there were gender differences in everyday activities as well as in mating and relating. Males were more interested in sports, watching sports on TV, and gaming while females preferred yoga, watching TV, theater, shopping, dining concerts, and art. Males preferred attractive females while females preferred ambitious men. The feature selection process showed that love at first sight does not necessarily guarantee a long-lasting relationship. For example, ambition negatively predicted finding a match for both genders while sincerity negatively predicated finding a match for males, and was a trivial predictor in finding a match for females. That is, both males and females do not consider sincerity an important factor in finding love at first sight, even though, both genders wanted sincerity in a relationship (since both genders reported them as important qualities in a potential date). Older females had a much harder time finding a match – for them age negatively predicted love at first sight, and those females who major in Film and Social Work were more likely to find a match compared with those who major in Biology/Chemistry/Physics. No one should be now surprised that there is a shortage of females in STEM.
+Furthermore, I built two models, for each gender, that predicted finding love at first sight. The findings indicate that there were gender differences in everyday activities as well as in mating and relating. Males were more interested in sports, watching sports on TV, and gaming while females preferred yoga, watching TV, theater, shopping, dining concerts, and art. Males preferred attractive females while females preferred ambitious men. The feature selection process showed that love at first sight does not necessarily guarantee a long-lasting relationship. For example, ambition negatively predicted finding a match for both genders while sincerity negatively predicated finding a match for males, and was a trivial predictor in finding a match for females. That is, both males and females do not consider sincerity an important factor in finding love at first sight, even though, both genders wanted sincerity in a relationship (since both genders reported them as important qualities in a potential date). Older females had a much harder time finding a match – for them age negatively predicted love at first sight, and those females who major in Film and Social Work were more likely to find a match compared with those who major in Biology/Chemistry/Physics. 
 
 These are just some highlights, and of course, love at first sight is not completely superficial. Both genders would choose a partner who they perceived shared interests with them, and those who valued intelligence in their partners were more likely to find a match. However, these findings cannot be applicable to the general population. Columbia students and students in general do not behave like the general population. To make these findings applicable to the general population, data should be collected from multiple speed dating events from various states, from all age groups, and from people with various economic backgrounds.
 
