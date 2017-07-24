@@ -100,7 +100,7 @@ As seen in the table above, the SMOT Extra Tree classifier outperformed the Extr
 [![SMOT Females]({{ site.url }}{{ site.baseurl }}/images/pic6_9.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_9.png)
 
 
-Moreover, as seen below, the SMOT Extra Tree classifier helped to yield perfect AUC scores for both models.
+Moreover, as seen below, the SMOT Extra Tree classifier helped to yield nearly perfect AUC scores for the both models.
 
 [![SMOT Females]({{ site.url }}{{ site.baseurl }}/images/pic6_12.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_12.png)
 
