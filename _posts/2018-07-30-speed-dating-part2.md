@@ -84,7 +84,7 @@ I chose Extra Tree classifier trained on the balanced data set using the regular
 |Logistic Regression                |89.38%                    |92.00%                      |
 |Extra Tree Classifier              |90.01%                    |92.66%                      |
 |Extra Tree Classifier SMOT         |95.19%                    |96.42%                      |
-|                                   |                          |                            |
+                    
 |TEST SET:                          |                          |                            | 
 |Logistic Regression                |89.70%                    |92.47%                      |
 |Extra Tree Classifier              |90.49%                    |92.11%                      |
