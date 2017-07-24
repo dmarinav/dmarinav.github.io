@@ -78,16 +78,14 @@ In the tables of accuracy scores below, you can see that the SMOTs techniques dr
 I chose Extra Tree classifier trained on the balanced data set using the regular synthetic minority oversampling technique. I tested it on the imbalanced test data set and compared its accuracy to the accuracy of the Extra Tree classifier that was trained and tested on the imbalanced data set and the logistic regression with adjusted class weights that was trained and tested on the imbalanced data set. The table below represents train and test accuracy scores for the tuned and tuned algorithms.
 
 
-|Classifiers                        | ACCURACY of MALE MODEL   | ACCURACY OF FEMALE MODEL   | 
+|Classifiers                        | ACCURACY OF MALE MODEL   | ACCURACY OF FEMALE MODEL   | 
 |:---------------------------------:|:------------------------:|:--------------------------:|
 |TRANING SET:                       |                          |                            |
-|                                   |                          |                            |
 |Logistic Regression                |89.38%                    |92.00%                      |
 |Extra Tree Classifier              |90.01%                    |92.66%                      |
 |Extra Tree Classifier SMOT         |95.19%                    |96.42%                      |
 |                                   |                          |                            |
-|TEST SET:                          |                          |                            |
-|                                   |                          |                            |
+|TEST SET:                          |                          |                            | 
 |Logistic Regression                |89.70%                    |92.47%                      |
 |Extra Tree Classifier              |90.49%                    |92.11%                      |
 |Extra Tree Classifier SMOT         |97.93%                    |98.00%                      |
