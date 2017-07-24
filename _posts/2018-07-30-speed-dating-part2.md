@@ -91,7 +91,7 @@ Extra Tree classifier exibited the best perfomace across the SWOTs techniques. T
 |Extra Tree Classifier SMOT         |97.93%                    |98.00%                      |
 
 
-As seen in the table above, the SMOT Extra Tree classifier outperformed the Extra Tree Classifier and logistic regression. In addition, as seen below from the confusion matrices, the SMOT Extra Tree classifier substantially improved precision and recall accuracy for the imbalanced class (20 % and 46 %, correspondingly). 
+As seen in the table above, the SMOT Extra Tree classifier outperformed the Extra Tree Classifier and logistic regression. In addition, as seen below from the confusion matrices, the SMOT Extra Tree classifier substantially improved precision and recall accuracy for the imbalanced class on the test set (20 % and 46 %, correspondingly). 
 
 #### MALE MODEL
 [![SMOT Females]({{ site.url }}{{ site.baseurl }}/images/pic6_10.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_10.png)
