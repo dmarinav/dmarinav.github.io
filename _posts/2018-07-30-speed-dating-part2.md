@@ -56,8 +56,6 @@ In the tables of accuracy scores below, you can see that the SMOTs techniques dr
 |Extra Trees             |0.881 ± 0.025|0.940 ± 0.011|0.943 ± 0.010|0.947 ± 0.007|0.945 ± 0.015|0.968 ± 0.010|
 |Ada Boost               |0.886 ± 0.029|0.930 ± 0.012|0.921 ± 0.016|0.926 ± 0.014|0.926 ± 0.018|0.895 ± 0.016|
 |Gradient Boosting       |0.896 ± 0.020|0.938 ± 0.015|0.931 ± 0.015|0.939 ± 0.014|0.944 ± 0.016|0.916 ± 0.012|
-|Bernoulli NB            |0.882 ± 0.021|0.888 ± 0.014|0.847 ± 0.027|0.864 ± 0.016|0.863 ± 0.018|0.845 ± 0.020|
-|Support Vector          |0.894 ± 0.018|0.895 ± 0.010|0.873 ± 0.015|0.891 ± 0.020|0.887 ± 0.014|0.878 ± 0.014|
 
 
 #### FEMALE MODEL
@@ -71,8 +69,6 @@ In the tables of accuracy scores below, you can see that the SMOTs techniques dr
 |Extra Trees             |0.907 ± 0.011|0.959 ± 0.008|0.962 ± 0.010|0.960 ± 0.008|0.960 ± 0.006|0.969 ± 0.009|
 |Ada Boost               |0.919 ± 0.013|0.945 ± 0.012|0.943 ± 0.007|0.948 ± 0.010|0.949 ± 0.008|0.933 ± 0.010|
 |Gradient Boosting       |0.928 ± 0.014|0.952 ± 0.009|0.948 ± 0.010|0.955 ± 0.012|0.956 ± 0.009|0.943 ± 0.010|
-|Bernoulli NB            |0.911 ± 0.013|0.901 ± 0.014|0.896 ± 0.017|0.894 ± 0.019|0.898 ± 0.019|0.883 ± 0.013|
-|Support Vector          |0.921 ± 0.022|0.933 ± 0.012|0.922 ± 0.009|0.929 ± 0.015|0.931 ± 0.014|0.922 ± 0.013|
 
 
 Extra Tree classifier exibited the best perfomace across the SWOTs techniques. Thus, my choice was the Extra Tree classifier trained on the balanced data set using the regular synthetic minority oversampling technique. I tested it on the imbalanced test data set and compared its accuracy to the accuracy of the Extra Tree classifier that was trained and tested on the imbalanced data set and the logistic regression with adjusted class weights that was trained and tested on the imbalanced data set. The table below represents training and test accuracy scores for the tuned algorithms.
