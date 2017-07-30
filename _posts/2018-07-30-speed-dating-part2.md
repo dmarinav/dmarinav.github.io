@@ -30,7 +30,7 @@ In Part 1, I went over EDA and a feature selection process. Please visit [Part 1
 
 However, going through the interview process for data science positions, I realized that many industry experts use a simple logistic regression to combat imbalanced classes. Here, I want to demonstrate that combating imbalanced classes with more sophisticated techniques can substantially outperform logistic regression. Applying these techniques can save company several thousands or even millions dollars in revenue. In industry, instead of predicting a speed dating match we need to match an advertiser with a publisher or do risk assessment and evaluation for loans. Thus, improving accuracy of an algorithm can substantially increase profitability of a company. 
 
-In this project, I implemented several SMOT techniques and chose the one that would give me the best accuracy across the nine classifiers: 1) Decision Tree, 2) Logistic Regression, 3) Bagging DT, 4) Random Forest, 5) Extra Trees, 6) Ada Boost, 7) Gradient Boosting, 8) Bernoulli NB, and 9) Support Vector Machine.
+In this project, I implemented several SMOT techniques and chose the one that would give me the best accuracy across seven classifiers: 1) Decision Tree, 2) Logistic Regression, 3) Bagging DT, 4) Random Forest, 5) Extra Trees, 6) Ada Boost, and 7) Gradient Boosting.
 
 Below is an illustration of various synthetic minority oversampling techniques for the male model (in blue) and female model (in purple). As you can see from the graphs, they create additional data for the imbalanced class "match", but they use different approaches. 
 
