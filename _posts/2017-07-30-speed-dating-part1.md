@@ -48,7 +48,7 @@ As we can see from the histogram, most females and males were in the age group o
 [![Count of Race]({{ site.url }}{{ site.baseurl }}/images/pic6_2.png)]({{ site.url }}{{ site.baseurl }}/images/pic6_2.png)
 
 
-Most participants were European Americans, followed by Asian Americans, Hispanic Americans, others, and African Americans. There were approximately the same number of males and females in each race group.
+Most participants were European Americans, followed by Asian Americans, Hispanic Americans, others, and African Americans. There was approximately the same number of males and females in each race group.
 
 Furthermore, as seen below, there were some gender differences in recreational activities.  Males were more interested in sports, TV sports, and gaming while females preferred yoga, watching TV, theater, shopping, dining concerts, and art. Both genders liked reading, music, movies, hiking, exercise, and clubbing. 
  
