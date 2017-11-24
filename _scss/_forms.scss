@@ -2,7 +2,7 @@
    Forms
    ========================================================================== */
 
-form {
+btnform {
   margin: 0 0 5px 0;
 
   fieldset {
@@ -51,19 +51,16 @@ input,
 button,
 select,
 textarea {
-  box-sizing: border-box;
   font-family: $sans-serif;
+  box-sizing: border-box;
 }
 
 label {
   display: block;
-  margin-bottom: 0.25em;
+  margin-bottom: 10px / 8;
+  font-weight: bold;
   color: $text-color;
   cursor: pointer;
-
-  small {
-    font-size: $type-size-6;
-  }
 
   input,
   textarea,
@@ -77,13 +74,11 @@ textarea,
 select {
   display: inline-block;
   width: 100%;
-  padding: 0.25em;
-  margin-bottom: 0.5em;
-  color: $text-color;
+  padding: 4px;
+  margin-bottom: 5px / 4;
   background-color: #fff;
   border: 1px solid mix(#fff, #000, 80%);
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  color: $text-color;
 
   &:hover {
     border-color: mix(#fff, $primary-color, 50%);
@@ -168,10 +163,6 @@ textarea {
 
 input[type="hidden"] {
   display: none;
-}
-
-.form {
-  position: relative;
 }
 
 .radio,
@@ -322,38 +313,6 @@ select:focus {
   margin-left: 0;
   margin-right: 3px;
 }
-
-
-/*
-   .form--loading
-   ========================================================================== */
-
-.form--loading:before {
-  content: '';
-}
-
-.form--loading .form__spinner {
-  display: block;
-}
-
-.form:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
-  z-index: 10;
-}
-
-.form__spinner {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 11;
-}
-
 
 
 /*
